@@ -37,10 +37,6 @@ public class StatsService{
     }
 public int belowAverageSales(int[] sales){
         int monthAmount = 0;
-        int sum = 0;
-        for (int monthSale: sales){
-            sum += monthSale;
-        }
         for (int monthSale: sales){
             if (monthSale < averageSalesAmount(sales)){
                 monthAmount += 1;
@@ -50,10 +46,6 @@ public int belowAverageSales(int[] sales){
 }
     public int salesAreAboveAverage(int[] sales){
         int monthAmount = 0;
-        int sum = 0;
-        for (int monthSale: sales){
-            sum += monthSale;
-        }
         for (int monthSale: sales){
             if (monthSale > averageSalesAmount(sales)){
                 monthAmount += 1;
