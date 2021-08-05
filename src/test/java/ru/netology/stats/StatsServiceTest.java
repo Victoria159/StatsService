@@ -23,7 +23,7 @@ assertEquals(expected,actual);
     int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
     int expected = 15;
 
-    int actual = service.averageSalesAmount(sales);
+    int actual = service.avg(sales);
     assertEquals(expected,actual);
 }
 @Test
